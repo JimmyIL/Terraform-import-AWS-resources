@@ -2,15 +2,15 @@
 ### Powershell/pwsh functions that import all the specified resources in AWS per region
 
 ## Prequisits 
-pwsh 7/powershell 7+
-Must use Terraform versions <1.3.0 (or was it <= 1.2.8?)
-any terraform version higher than those ^ do not have "--allow-missing-config" (sadly was removed by hashicorp.)
+<br>pwsh 7/powershell 7+
+<br>Must use Terraform versions <1.3.0 (or was it <= 1.2.8?)
+<br>any terraform version higher than those ^ do not have "--allow-missing-config" (sadly was removed by hashicorp.)
 
 ## What does this do? How can I use it? 
 -each .ps1 file is a functions that imports all of the specified resources in AWS by region.
-
+<br>
 -to run, simply create a folder and navigate to a fresh empty directory, open terraform and and run the .ps1 in powershell (linux/mac = pwsh)
-
+<br>
 ## Problems/issues
 -I encourage opening issues/Pull requests.  If something is not working I would like to know!
 -If you do encounter an error or problem ensure you do not use your existing terraform state file, you should be able to just run this locally.
