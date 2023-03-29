@@ -2,13 +2,12 @@ function import-iam_roles {
 
   #set default region, if not set this uses us-west-2  < import-iam_roles -region us-east-1  >  (example usage)
   param (
-    $region = "us-west-2" 
+    $region = "us-east-1" 
   )
 
   # create necessary folder and files for import
-  $global:r = 'aws_iam_role'          #resource we are using 
-  $global:region = $region 
-  $global:roles = (Get-IAMRoles).RoleName
+  $r = 'aws_iam_role'          #resource we are using 
+  $roles = (Get-IAMRoleList).RoleName
 
   #provider info
   $provider_for_main = @"
