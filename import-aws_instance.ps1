@@ -3,7 +3,7 @@
 # This is mainly for new imports/customers, but for existing it can still skip over already managed TF ec2 instances and pulls only unmanaged to file/ tfstate.
 # This .ps1 when ran gathers ALL the ec2 instances and existing attributes by tagname and imports to tfstate, where 'import' will create to 'imported_ec2.tf'
 # check aws config to make sure the account is the proper one.
-# requires powershell module AWSPowershell.NetCore
+# requires powershell or pwsh module AWSPowershell.NetCore
 
 function import-aws_instance { 
   param( 
